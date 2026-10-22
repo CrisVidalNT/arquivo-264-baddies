@@ -166,3 +166,5 @@ O código fonte e os testes da pontuação estão preparados. Neste ambiente de 
 ## 9. Automatização no GitHub
 
 O arquivo `.github/workflows/ci.yml` executa testes, ESLint e build em todo `push` e `pull request`. Se alguma validação falhar, clique na aba **Actions** do repositório para ler a mensagem antes de publicar.
+#   a r q u i v o - 2 6 4 - b a d d i e s  
+ 
