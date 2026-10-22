@@ -1,0 +1,41 @@
+.inner-screen { min-height: 770px; }
+.inner-screen .frame-main { padding: 35px 7px 36px; }
+.section-label { display: flex; align-items: center; gap: 11px; font-size: 10px; letter-spacing: .15em; color: #9ecbe5; font-weight: 700; }
+.inner-title { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; line-height: 1.13; font-size: clamp(32px, 7vw, 49px); color: #edf8ff; margin: 21px 0 14px; }
+.inner-title em { color: #acd9f1; font-weight: 400; }
+.inner-intro { font-size: 14px; color: #b6cddd; line-height: 1.8; max-width: 400px; margin: 3px 0 36px; }
+.identity-emblem { position: relative; margin-top: 65px; display: flex; align-items: center; justify-content: center; width: 104px; height: 104px; border: 1px solid rgba(170,218,246,.45); transform: rotate(45deg); }
+.identity-ring { position: absolute; width: 70px; height: 70px; border: 1px dashed #8bbbd4; border-radius: 50%; }
+.fingerprint-symbol { transform: rotate(-45deg); color: #c9ecfa; font-size: 42px; text-shadow: 0 0 22px #9adfff; }
+.identity-form { display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; }
+.field-label { color: #a6cee4; font-size: 10px; letter-spacing: .15em; font-weight: 700; }
+.text-input { border: 1px solid rgba(145,194,225,.52); border-radius: 10px; background: rgba(9,26,44,.7); color: #f2faff; height: 57px; padding: 0 18px; outline: none; font-size: 16px; }
+.text-input::placeholder { color: #7e9eb5; }
+.field-help { color: #93b3c7; font-size: 11px; line-height: 1.6; margin: -1px 0 18px; }
+.text-link { border: none; background: transparent; color: #b2d8eb; padding: 10px 0; font-size: 11px; letter-spacing: .1em; text-align: left; text-decoration: none; }
+.text-link:hover { color: #fff; text-decoration: underline; }
+
+.question-heading { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.index-label { color: #f0f8ff; font: 29px/1 Georgia, serif; white-space: nowrap; }
+.index-label span { color: #719db9; }
+.progress-track { height: 3px; width: 100%; border-radius: 4px; background: rgba(147,188,214,.2); margin: 25px 0 42px; overflow: hidden; }
+.progress-track span { display: block; height: 100%; background: linear-gradient(90deg, #5e9cca, #d2f2ff); transition: width .32s; }
+.question-meta { display: flex; justify-content: space-between; gap: 15px; color: #8eb6cf; font-size: 9px; letter-spacing: .12em; }
+.question-meta span:last-child { text-align: right; }
+.question-title { font: 31px/1.35 Georgia, 'Times New Roman', serif; margin: 18px 0 37px; color: #f0f8ff; letter-spacing: -.018em; }
+.choice-list { border: 0; padding: 0; margin: 0; display: grid; gap: 12px; }
+.choice { display: flex; align-items: center; gap: 16px; cursor: pointer; border: 1px solid rgba(150,191,218,.3); border-radius: 11px; min-height: 74px; padding: 15px 17px; background: rgba(11,30,49,.58); transition: border-color .2s, background .2s, transform .2s; }
+.choice:hover { border-color: rgba(181,230,251,.82); transform: translateX(2px); }
+.choice--selected { border-color: #b5e3fa; background: rgba(66,118,153,.37); box-shadow: inset 0 0 22px rgba(130,205,244,.08); }
+.choice input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.choice-letter { display: grid; place-items: center; width: 33px; height: 35px; border: 1px solid rgba(176,220,241,.5); flex: none; color: #b6e3f9; font-family: Georgia,serif; font-size: 17px; border-radius: 5px; }
+.choice--selected .choice-letter { background: #d0edfd; color: #183a56; }
+.choice-text { flex: 1; font-size: 13px; line-height: 1.55; color: #dbeaf3; }
+.choice-mark { font-size: 15px; color: #74a3c4; }
+.choice--selected .choice-mark { color: #d6f1ff; }
+.question-controls { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 31px; }
+.question-next { max-width: 280px; font-size: 10px; padding: 16px 12px; }
+.question-note { color: #779fb9; text-align: center; font: italic 12px Georgia,serif; margin: 28px 0 0; }
+.final-warning { border: 1px solid rgba(183,223,244,.4); background: rgba(91,143,185,.1); color: #d0ecfc; font-size: 10px; text-align: center; letter-spacing: .1em; line-height: 1.8; padding: 13px; margin: -24px 0 35px; animation: reveal-up .7s both; }
+.final-warning span { color: #c2eaff; font-size: 17px; vertical-align: middle; margin-right: 9px; }
+

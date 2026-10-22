@@ -1,0 +1,68 @@
+
+:root {
+  --night: #14243a;
+  --deep: #0b1c2e;
+  --storm: #2f4e73;
+  --iris: #6ea8d9;
+  --mist: #d9ecf7;
+  --frost: #92a8bc;
+  --white: #eff9ff;
+  --text: #dcebf4;
+  --muted: #aac2d2;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif; background: #081727; color: var(--text); }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button:disabled { opacity: .48; cursor: not-allowed; }
+button:focus-visible, input:focus-visible, .choice:focus-within { outline: 2px solid #c3ecff; outline-offset: 4px; }
+::selection { background: #bfe7fb; color: #14243a; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
+
+.app-ambient {
+  position: relative; isolation: isolate; min-height: 100svh; padding: 34px 20px 24px;
+  display: flex; align-items: center; flex-direction: column; justify-content: center; overflow: hidden;
+  background:
+    radial-gradient(ellipse 64% 43% at 49% 48%, rgba(93,149,189,.25), transparent 76%),
+    radial-gradient(ellipse 38% 40% at 93% 4%, rgba(110,168,217,.11), transparent 83%),
+    linear-gradient(145deg, #0a1d30 0%, #10253b 45%, #071727 100%);
+}
+.app-ambient::before { content: ''; position: absolute; inset: 0; pointer-events: none; z-index: -2; opacity: .2;
+  background-image: radial-gradient(#c8eafa 0.65px, transparent .8px); background-size: 21px 21px; mask-image: linear-gradient(120deg, #000, transparent 65%); }
+.app-ambient::after { content: ''; pointer-events: none; position: absolute; inset: 0; z-index: -1; opacity: .25;
+  background: linear-gradient(70deg, transparent 15%, rgba(145,202,234,.035) 23%, transparent 39%, transparent 77%, rgba(145,202,234,.05) 88%, transparent); }
+.app-container { position: relative; z-index: 1; width: min(100%, 590px); }
+.ambient-caption { position: relative; margin-top: 18px; font-size: 9px; letter-spacing: .3em; color: #7e9db2; text-align: center; }
+.ambient-caption span { margin: 0 12px; color: #9ecce8; }
+.floating-mist { position: absolute; width: min(78vw, 690px); height: 180px; border-radius: 50%; filter: blur(75px); opacity: .27; pointer-events: none; }
+.mist-left { top: 14%; left: -240px; background: #80b0d5; }
+.mist-right { bottom: 2%; right: -260px; background: #85c0e4; }
+.glass-etch { position: absolute; width: 350px; height: 430px; border: 1px solid rgba(145,213,246,.2); transform: rotate(26deg) skew(8deg); pointer-events: none; z-index: -1; }
+.glass-etch--left { left: -240px; top: 11%; }
+.glass-etch--right { right: -250px; bottom: 10%; transform: rotate(-18deg) skew(-9deg); }
+
+.screen-frame { position: relative; overflow: hidden; min-height: 750px; border: 1px solid rgba(181,222,243,.36); border-radius: 24px; padding: 0 32px 23px; display: flex; flex-direction: column;
+  box-shadow: 0 24px 100px rgba(0,0,0,.45), 0 0 0 7px rgba(164,218,245,.035), inset 0 0 90px rgba(95,157,195,.065);
+  background: linear-gradient(180deg, rgba(31,60,88,.75) 0%, rgba(15,36,58,.9) 55%, rgba(12,29,48,.95) 100%); }
+.screen-frame::before { content: ''; position: absolute; left: -32%; top: 9%; width: 160%; height: 600px; pointer-events: none; opacity: .19;
+  background: radial-gradient(ellipse at center, #c6e7f9 0%, #6189aa 13%, transparent 64%); filter: blur(80px); }
+.screen-frame::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .3; z-index: 0;
+  background: linear-gradient(118deg, transparent 0%, transparent 35%, rgba(196,226,247,.03) 36%, transparent 37%, transparent 68%, rgba(196,226,247,.027) 70%, transparent 71%); }
+.frame-header, .frame-footer, .frame-rule, .frame-main { position: relative; z-index: 1; }
+.frame-header { height: 86px; display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.brand-signature { display: flex; align-items: center; gap: 12px; }
+.brand-logo { width: 136px; flex: none; }
+.brand-logo img { display: block; width: 100%; height: auto; }
+.brand-logo--tiny { width: 93px; }
+.brand-logo--large { width: 174px; }
+.brand-signature > span { color: #a4c0d2; font-family: Georgia, serif; font-size: 9px; letter-spacing: .24em; text-transform: uppercase; }
+.frame-right { display: flex; align-items: center; gap: 8px; font-size: 9px; letter-spacing: .18em; color: #a9c3d7; white-space: nowrap; }
+.signal-dot { display: inline-block; width: 7px; height: 7px; background: #b5e3f7; border-radius: 50%; box-shadow: 0 0 10px #83c5ec; animation: signal 2.6s infinite; flex: none; }
+.frame-rule { height: 1px; background: linear-gradient(90deg, transparent, rgba(172,216,241,.4), transparent); }
+.frame-main { display: flex; flex-direction: column; flex: 1; }
+.frame-footer { border-top: 1px solid rgba(150,202,231,.23); margin-top: auto; padding-top: 19px; display: flex; justify-content: space-between; gap: 8px; color: #789fba; font-size: 9px; letter-spacing: .12em; }
+.frame-footer b { color: #aacbdc; padding: 0 5px; }
+
