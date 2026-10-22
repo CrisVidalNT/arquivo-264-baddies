@@ -1,0 +1,25 @@
+/* Capa visual: hierarquia e enquadramento inspirados no pôster aprovado. */
+.welcome-screen { min-height: 925px; padding: 0; }
+.welcome-backdrop { position: absolute; inset: 0; z-index: 0; background: url('/assets/capa-arquivo-264.webp') center center / cover no-repeat; }
+.welcome-screen::before { content: ''; pointer-events: none; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg,rgba(4,19,33,.2),transparent 20%,transparent 47%,rgba(3,15,28,.14) 59%,rgba(2,10,20,.36) 100%); }
+.welcome-layout { position: relative; z-index: 2; display: flex; flex-direction: column; height: 100%; min-height: inherit; text-align: center; align-items: stretch; padding: 40px 38px 27px; }
+.welcome-brand { display: flex; flex-direction: column; align-items: center; gap: 13px; }
+.welcome-presents { display: flex; align-items: center; gap: 13px; color: #d3e5f5; font: 400 20px var(--serif); letter-spacing: .31em; text-indent: .31em; }
+.welcome-presents i { width: 30px; height: 1px; background: rgba(209,234,247,.8); }
+.welcome-titling { padding-top: 27px; }
+.cover-title { margin: 0; color: #e1effc; font: 400 clamp(67px, 11.9vw, 83px)/.97 var(--serif); letter-spacing: .015em; text-shadow: 0 3px 15px rgba(22,54,88,.3),0 0 32px rgba(213,235,255,.18); }
+.cover-title span { display: block; font-size: 1.18em; letter-spacing: .20em; padding-left: .20em; }
+.welcome-eye-space { flex: 1; min-height: 140px; }
+.welcome-closing { display: flex; align-items: center; flex-direction: column; gap: 0; }
+.welcome-quote { color: #e6f5ff; font: 400 clamp(21px, 3.1vw, 27px)/1.43 var(--serif); letter-spacing: .08em; text-shadow: 0 2px 12px rgba(2,14,25,.85); margin: 0 0 22px; }
+.decor-rule { width: 60px; height: 1px; background: linear-gradient(90deg,transparent,#e3f6ff,transparent); }
+.welcome-description { margin: 21px 0 0; font: 400 15px/1.55 var(--serif); letter-spacing: .11em; color: #d4e6f5; text-shadow: 0 2px 16px #09213a; }
+.welcome-action { margin-top: 37px; width: min(100%,370px); min-height: 65px; border-radius: 16px; font-size: 15px; background: linear-gradient(105deg,rgba(165,209,241,.27),rgba(91,149,194,.31),rgba(185,230,251,.22)); }
+.welcome-signature { margin: 30px 0 0; color: #d3e4ef; font: 400 12px/1.4 var(--serif); letter-spacing: .12em; text-shadow: 0 2px 11px #051424; }
+.welcome-signature span { margin: 0 6px; opacity: .77; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .welcome-brand { animation: reveal-up .85s both; }
+  .welcome-titling { animation: reveal-up .9s .12s both; }
+  .welcome-closing { animation: reveal-up .9s .33s both; }
+}

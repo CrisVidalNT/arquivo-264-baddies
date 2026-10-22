@@ -1,0 +1,15 @@
+.processing-screen { min-height: 820px; }
+.processing-center { display: flex; flex: 1; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 42px 0 34px; }
+.processing-eye { position: relative; width: min(100%, 365px); aspect-ratio: 1.55; border-radius: 50%; background: url('/assets/olho-detalhe-264.webp') center / cover no-repeat; mask-image: radial-gradient(ellipse 59% 66%, #000 38%, transparent 96%); filter: drop-shadow(0 0 35px rgba(160,215,246,.27)); animation: eye-float 6s ease-in-out infinite; }
+.processing-scan { display: block; position: absolute; height: 2px; width: 100%; top: 0; left: 0; background: #c9f1ff; box-shadow: 0 0 22px #8dccf4; animation: scan-eye 3.4s ease-in-out forwards; }
+.processing-rule { width: 76px; height: 1px; background: linear-gradient(90deg,transparent,#c6ecff,transparent); margin: 5px 0 20px; }
+.processing-center .inner-title { font-size: clamp(31px, 8vw, 45px); }
+.processing-caption { margin: 4px 0 2px; font: italic 16px var(--ui-serif); color: #c9deed; }
+.processing-bar { margin: 42px 0 22px; height: 3px; width: min(80%,350px); background: rgba(166,213,237,.2); overflow: hidden; }
+.processing-bar span { display: block; height: 100%; width: 0; background: #d4f1ff; box-shadow: 0 0 14px #8fd4ff; animation: processing 3.4s linear forwards; }
+.processing-steps { color: #b9d8eb; font-size: 9px; letter-spacing: .19em; display: grid; gap: 13px; }
+.processing-steps span { opacity: 0; animation: step-show .4s forwards; }
+.processing-steps span:nth-child(1) { animation-delay: .4s; }
+.processing-steps span:nth-child(2) { animation-delay: 1.4s; }
+.processing-steps span:nth-child(3) { animation-delay: 2.4s; }
+.processing-alert { max-width: 330px; color: #e2f4ff; font-size: 10px; line-height: 1.7; letter-spacing: .1em; border-top: 1px solid rgba(204,233,249,.23); margin: 37px 0 0; padding-top: 24px; opacity: 0; animation: step-show .5s 2.5s forwards; }

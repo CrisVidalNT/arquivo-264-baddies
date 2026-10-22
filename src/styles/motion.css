@@ -1,0 +1,8 @@
+@keyframes signal { 50% { opacity: .4; box-shadow: 0 0 3px #83c5ec; } }
+@keyframes eye-float { 50% { transform: translateY(-6px); filter: drop-shadow(0 0 32px rgba(125,209,255,.36)); } }
+@keyframes processing { to { width: 100%; } }
+@keyframes step-show { to { opacity: 1; } }
+@keyframes reveal-up { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes flicker { 0%,96%,99%,100% { opacity: 1; } 97%,98% { opacity: .72; } }
+@keyframes frequency { to { transform: scaleY(.35); opacity: .55; } }
+@keyframes scan-eye { from { top: 12%; } to { top: 85%; } }

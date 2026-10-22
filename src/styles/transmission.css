@@ -1,0 +1,18 @@
+/* Epílogo: interferência leve, como alguém reescrevendo um arquivo. */
+.transmission-screen { min-height: 845px; }
+.transmission-screen::before { background: linear-gradient(180deg,rgba(2,12,25,.62),rgba(3,18,33,.90)),url('/assets/capa-arquivo-264.webp') center / cover no-repeat !important; }
+.transmission-box { position: relative; overflow: hidden; margin: 36px 0 0; padding: 46px 23px 38px; text-align: center; border: 1px solid rgba(203,237,253,.36); border-radius: 2px; background: rgba(6,24,43,.46); backdrop-filter: blur(10px); }
+.transmission-box::before { content: ''; pointer-events: none; position: absolute; inset: 0; opacity: .34; background: repeating-linear-gradient(0deg,transparent 0,transparent 5px,rgba(219,242,255,.055) 6px); }
+.transmission-alert { position: relative; color: #d6f2ff; display: flex; gap: 10px; align-items: center; justify-content: center; font-size: 10px; letter-spacing: .12em; font-weight: 600; }
+.transmission-alert span:last-child { opacity: .57; }
+.glitch-indicator { color: #c9f0ff; animation: signal .7s infinite; }
+.glitch-title { position: relative; margin: 42px 0 19px; color: #eef8ff; font: 400 clamp(29px,7vw,43px)/1.15 var(--serif); letter-spacing: .04em; text-shadow: -2px 0 rgba(128,200,245,.19),2px 0 rgba(228,242,255,.11); animation: flicker 6s infinite; }
+.frequency-bars { position: relative; display: flex; justify-content: center; align-items: center; gap: 4px; height: 35px; margin: 0 auto 35px; opacity: .6; }
+.frequency-bars span { width: 2px; background: #c8ebff; transform-origin: center; animation: frequency 1.2s ease-in-out infinite alternate; animation-delay: calc(var(--i) * -65ms); }
+.transmission-intro { position: relative; margin: 11px 0; color: #e2eff7; font: 17px/1.6 var(--ui-serif); }
+.transmission-box blockquote { position: relative; margin: 35px 0; padding: 25px 15px; border-top: 1px solid rgba(200,238,255,.25); border-bottom: 1px solid rgba(200,238,255,.25); color: #dbf3ff; font: italic 20px/1.55 var(--ui-serif); }
+.transmission-last { position: relative; margin-top: 36px; }
+.transmission-last p { color: #c1dbeb; font: 16px var(--ui-serif); }
+.transmission-last strong { color: #f5fbff; font: 400 clamp(24px, 7vw, 34px)/1.28 var(--serif); }
+.transmission-signoff { position: relative; margin-top: 40px; color: #b8d5e9; font-size: 9px; letter-spacing: .13em; }
+.restart-link { text-align: center; }

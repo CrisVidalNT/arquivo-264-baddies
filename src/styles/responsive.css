@@ -1,0 +1,53 @@
+@media (max-width: 600px) {
+  .app-ambient { display: block; padding: 0; background: #061527; }
+  .app-ambient::before { display: none; }
+  .app-container { width: 100%; }
+  .ambient-caption { display: none; }
+  .screen-frame { border: 0; border-radius: 0; box-shadow: none; min-height: 100svh; padding: 0 22px 22px; }
+  .frame-header { min-height: 87px; }
+  .frame-right { font-size: 8px; letter-spacing: .05em; }
+  .frame-footer { font-size: 8px; letter-spacing: .025em; }
+  .inner-screen .frame-main { padding: 31px 0 36px; }
+  .welcome-screen { padding: 0; min-height: max(100svh,780px); }
+  .welcome-layout { padding: 30px 24px 26px; }
+  .welcome-titling { padding-top: 20px; }
+  .cover-title { font-size: clamp(56px,14.2vw,81px); }
+  .welcome-presents { font-size: 17px; }
+  .welcome-presents i { width: 25px; }
+  .welcome-quote { font-size: clamp(21px,5.7vw,26px); margin-bottom: 17px; }
+  .welcome-description { margin-top: 17px; font-size: 14px; }
+  .welcome-action { margin-top: 30px; min-height: 60px; font-size: 13px; }
+  .welcome-signature { margin-top: 23px; }
+  .inner-title { font-size: clamp(35px,9vw,48px); }
+  .identity-emblem { margin-top: 34px; }
+  .question-title { font-size: clamp(26px,7vw,34px); }
+  .choice { padding: 13px 12px; gap: 11px; min-height: 75px; }
+  .choice-text { font-size: 13px; }
+  .question-controls { gap: 9px; }
+  .question-next { flex: 1; font-size: 10px; max-width: 255px; }
+  .dossier-sheet { padding: 22px 19px; }
+  .dossier-profile h1 { font-size: clamp(30px,7vw,43px); }
+  .dossier-head strong { font-size: 25px; }
+  .dossier-analysis p { font-size: 14px; }
+  .glitch-title { font-size: clamp(29px,8vw,41px); }
+}
+@media (max-width: 370px) {
+  .screen-frame { padding-left: 16px; padding-right: 16px; }
+  .welcome-screen { padding: 0; }
+  .welcome-layout { padding: 25px 19px 24px; }
+  .cover-title { font-size: clamp(54px,14vw,68px); }
+  .welcome-eye-space { min-height: 100px; }
+  .brand-signature > span { display: none; }
+  .question-title { font-size: 25px; }
+  .question-next { font-size: 9px; }
+  .choice-letter { width: 31px; height: 35px; }
+  .choice-mark { display: none; }
+  .dossier-traits { gap: 8px; }
+  .dossier-head strong { font-size: 23px; }
+  .stamp { padding: 7px 5px; font-size: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  .processing-bar span { width: 100%; }
+  .processing-steps span, .processing-alert { opacity: 1; }
+}
